@@ -11,7 +11,7 @@ install() {
   tar -xzf node*.gz
   rm -rf node*.gz
   cd node*
-  ./configure --prefix=$ASDF_INSTALL_PATH
+  ./configure --prefix=$install_dir
   make -s install || exit 1
 }
 
